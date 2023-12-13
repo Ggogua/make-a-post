@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+  display: none;
+}
+
+.list {
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.list:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    color: white;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+}
+
+.square {
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    text-align: left;
+    margin-left: 800px;
+    border-radius: 20px;
+}
+
+.x-container {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(5, 5, 5);
+    transform-origin: center;
+  }
+  
+  .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .line2 {
+    transform: rotate(-45deg);
+  }
+
+  .active {
+    display: block;
+  }
+
+  #texter {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  #add {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    position: fixed;
+    right: 300px;
+    bottom: 100px;
+    position: fixed;
+    cursor: pointer;
+  }
+
+  .parent-div {
+    display: flex;
+    position: relative;
+  }
+
+  .input-wrap {
+    position: absolute;
+    bottom: 0;
+    display: none;  
+  }
+
+  .input-wrap.visible {
+    display: block;
+    position: fixed;
+    left: 20px;
+    bottom: 50px;
+  }
+
+  #input {
+    width: 500px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+  }
+
+  #toPost {
+    background-color: rgb(53, 81, 107);
+    font-size: 18px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+
+  #toPost:hover {
+    background-color: rgb(75, 125, 171);
+  }
+
+  #toPost:active {
+    translate: 0 2px;
+  }
+
+  .delButton {
+    border: none;
+    position: absolute;
+    right: 420px;
+    padding: 20px;
+    background-color: rgb(167, 6, 6);
+    color: white;
+    cursor: pointer;
+  }
+ 
+  #form {
+    display: flex;
+    flex-direction: column;
+  }
